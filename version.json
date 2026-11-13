@@ -1,0 +1,9 @@
+{
+  "versionName": "1.0.5",
+  "versionCode": 10005,
+  "minNative": 10004,
+  "webReady": true,
+  "url": "https://raw.githubusercontent.com/arthurbrito-pjt/Inv-Cedisa-apk/main/Inventario-Cedisa.apk",
+  "notes": "Cálculo da chapa pelas medidas informadas",
+  "publishedAt": "2026-11-13T18:20:44.462Z"
+}
