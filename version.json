@@ -1,0 +1,9 @@
+{
+  "versionName": "1.0.6",
+  "versionCode": 10006,
+  "minNative": 10004,
+  "webReady": true,
+  "url": "https://raw.githubusercontent.com/arthurbrito-pjt/Inv-Cedisa-apk/main/Inventario-Cedisa.apk",
+  "notes": "Tabela de lista nos códigos de chapa e código no igual ao anterior",
+  "publishedAt": "2026-11-13T19:14:09.862Z"
+}
