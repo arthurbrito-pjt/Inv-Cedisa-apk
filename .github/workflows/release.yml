@@ -1,0 +1,38 @@
+# Fluxo do repositório PÚBLICO de downloads (Inv-Cedisa-apk). É copiado para lá a cada release pelo repositório privado.
+# Quando os arquivos são publicados aqui, cria o release (aba "Releases") com o APK versionado, título e notas.
+name: Criar release
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Criar o release com o APK
+        run: |
+          VERSION="$(node -p "require('./version.json').versionName")"
+          NOTES="$(node -p "require('./version.json').notes || ''")"
+          TAG="v$VERSION"
+          FILE="Inventario-Cedisa-$VERSION.apk"
+          cp Inventario-Cedisa.apk "$FILE"
+          SUM="$(sha256sum "$FILE" | cut -d' ' -f1)"
+          {
+            echo "${NOTES:-Nova versão do aplicativo.}"
+            echo
+            echo "---"
+            echo "**Como instalar:** baixe o APK abaixo e instale por cima do app atual (os dados do aparelho são mantidos). Quem já tem o app recebe a atualização por dentro dele."
+            echo
+            echo "SHA-256: $SUM"
+          } > notes.md
+          gh release create "$TAG" "$FILE" --title "$VERSION" --notes-file notes.md --latest \
+            || gh release upload "$TAG" "$FILE" --clobber

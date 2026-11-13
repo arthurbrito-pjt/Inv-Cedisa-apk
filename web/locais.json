@@ -1,0 +1,83 @@
+[
+ {
+  "id": 1793379093283593,
+  "type": "galpao",
+  "name": "BOBINAS",
+  "parent_id": null,
+  "active": true,
+  "path": "BOBINAS",
+  "galpao_id": 1793379093283593
+ },
+ {
+  "id": 1792433556332357,
+  "type": "galpao",
+  "name": "Galpão A1",
+  "parent_id": null,
+  "active": true,
+  "path": "Galpão A1",
+  "galpao_id": 1792433556332357
+ },
+ {
+  "id": 1792439867389439,
+  "type": "galpao",
+  "name": "Galpão A2",
+  "parent_id": null,
+  "active": true,
+  "path": "Galpão A2",
+  "galpao_id": 1792439867389439
+ },
+ {
+  "id": 1792439872900379,
+  "type": "galpao",
+  "name": "Galpão A3",
+  "parent_id": null,
+  "active": true,
+  "path": "Galpão A3",
+  "galpao_id": 1792439872900379
+ },
+ {
+  "id": 1792439876961493,
+  "type": "galpao",
+  "name": "Galpão B1",
+  "parent_id": null,
+  "active": true,
+  "path": "Galpão B1",
+  "galpao_id": 1792439876961493
+ },
+ {
+  "id": 1792439881010412,
+  "type": "galpao",
+  "name": "Galpão B2",
+  "parent_id": null,
+  "active": true,
+  "path": "Galpão B2",
+  "galpao_id": 1792439881010412
+ },
+ {
+  "id": 1792439884399234,
+  "type": "galpao",
+  "name": "Galpão B3",
+  "parent_id": null,
+  "active": true,
+  "path": "Galpão B3",
+  "galpao_id": 1792439884399234
+ },
+ {
+  "id": 1792439888367400,
+  "type": "galpao",
+  "name": "Galpão B4",
+  "parent_id": null,
+  "active": true,
+  "path": "Galpão B4",
+  "galpao_id": 1792439888367400
+ },
+ {
+  "id": 1792439892068121,
+  "type": "galpao",
+  "name": "Galpão B5",
+  "parent_id": null,
+  "active": true,
+  "path": "Galpão B5",
+  "galpao_id": 1792439892068121
+ }
+]
